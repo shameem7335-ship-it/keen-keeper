@@ -67,6 +67,12 @@ const TimelinePage = () => {
 </div>
 
       {
+
+      filterdData.length === 0 ? <div className='text-centre font-bold flex justify-center m-20 text-2xl'>
+            <h1>No timeline data found</h1>
+         </div>:
+
+
         filterdData.map((item, index)=>
         <div key={index} className='bg-white my-2 py-4 '>
             <div className='flex gap-5 items-center text-center '>
