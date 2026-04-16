@@ -1,6 +1,7 @@
 import React, { use } from 'react';
 import { Link } from 'react-router';
 import Card from '../components/card';
+import { FaPlus } from 'react-icons/fa';
 
 const promise=  fetch('/data.json').then(res => res.json());
 
@@ -14,7 +15,7 @@ const Homepage = () => {
           <div className='flex flex-col items-center justify-center text-center space-y-3.5 container mx-auto'>
             <h1 className='text-2xl font-bold text-[#1F2937] mt-10'>Friends to keep close in your life</h1>
             <p className='font-semibold text-[#64748B]'>Your personal shelf of meaningful connections. Browse, tend, and nurture the<br/> relationships that matter most.</p>
-            <button className='btn btn-neutral mb-5'>+ Add a friend</button>
+            <button className='btn btn-neutral mb-5'><FaPlus /> Add a friend</button>
           </div>
           <div className=' grid grid-cols-4 gap-10 container mx-auto '>
             <div className='text-center p-12 shadow shadow-[0, 0, 0, 0.15] bg-white rounded-sm'>

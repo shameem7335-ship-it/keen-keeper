@@ -9,6 +9,7 @@ import TimelinePage from './page/TimelinePage'
 import StatsPage from './page/StatsPage'
 import ContactProvider from './components/customhooks'
 import { ToastContainer } from 'react-toastify'
+import InvalidRoute from './page/InvalidRoute'
 
 
 
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       path:"/stats",
       element: <StatsPage></StatsPage>
      },
+     {
+      path:"*",
+      element: <InvalidRoute></InvalidRoute>
+     }
     ]
   }
 ])
