@@ -41,7 +41,8 @@ const Homepage = () => {
             <div className='grid grid-cols-4 mx-auto text-center items-center space-x-5 space-y-5'>
                 {
                     allData.map(data =>
-                        <Card key={data.id} data={data}></Card>
+                        
+                            <Card key={data.id} data={data}></Card>
                     )
                 }
             </div>
