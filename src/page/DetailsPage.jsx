@@ -78,18 +78,22 @@ const {checkInHandler} = useContact();
         <div  className='bg-white  px-12 py-5'>
            <h1 className='text-2xl font-bold mb-4'>Quick Check-In</h1>
            <div className='flex justify-between gap-3'>
-             <div onClick={()=> checkInHandler("call", ecpectedCard)} className='text-center items-center px-22 py-5 rounded-sm bg-[#F8FAFC] shadow shadow-[0, 0, 0, 0.15]'>
+             <button onClick={()=> checkInHandler("call", ecpectedCard)} className='btn text-center items-center px-22 py-10 rounded-sm bg-[#F8FAFC] shadow shadow-[0, 0, 0, 0.15]'>
+                <div className='flex flex-col'>
                 <p className='text-[#1F2937] text-2xl text-2xl font-bold mb-3'><MdWifiCalling3 /></p>
-                <p className=' font-semibold'>Call </p>
-            </div>
-             <div onClick={()=> checkInHandler("text", ecpectedCard)} className='text-center items-center px-22  py-5 rounded-sm bg-[#F8FAFC] shadow shadow-[0, 0, 0, 0.15]'>
+                <p className=' font-semibold'>Call </p></div>
+            </button>
+             <button onClick={()=> checkInHandler("text", ecpectedCard)} className='btn text-center items-center px-22  py-10 rounded-sm bg-[#F8FAFC] shadow shadow-[0, 0, 0, 0.15]'>
+                <div className='flex flex-col'>
                 <p className='text-[#1F2937] text-2xl text-2xl font-bold mb-3'><MdOutlineTextsms /></p>
-                <p className='font-semibold'>Text </p>
-            </div>
-             <div onClick={()=> checkInHandler("video", ecpectedCard)} className='text-center items-center px-22 py-5 rounded-sm bg-[#F8FAFC] shadow shadow-[0, 0, 0, 0.15]'>
-                <p className='text-[#1F2937] text-2xl text-2xl font-bold mb-3'><IoVideocamOff /></p>
+                <p className='font-semibold'>Text </p></div>
+            </button>
+             <button onClick={()=> checkInHandler("video", ecpectedCard)} className='btn text-center items-center px-22 py-10 rounded-sm bg-[#F8FAFC] shadow shadow-[0, 0, 0, 0.15]'>
+                <div className='flex flex-col'>
+                    <p className='text-[#1F2937] text-2xl text-2xl font-bold mb-3'><IoVideocamOff /></p>
                 <p className=' font-semibold'>Video</p>
-            </div>
+                </div>
+            </button>
            </div>
         </div>
        </div>
