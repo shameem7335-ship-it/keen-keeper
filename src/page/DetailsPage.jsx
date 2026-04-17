@@ -54,15 +54,15 @@ const {checkInHandler} = useContact();
         {/* -- */}
         <div className='flex flex-col md:flex-row  gap-5'>
             <div className='text-center p-12 shadow shadow-[0, 0, 0, 0.15] bg-white rounded-sm'>
-                <p className='text-[#1F2937] text-2xl text-2xl font-bold mb-3'>62</p>
+                <p className='text-[#1F2937] text-2xl text-2xl font-bold mb-3'>{ecpectedCard.days_since_contact}</p>
                 <p className='text-[#64748B] font-semibold'>Days Since Contact </p>
             </div>
             <div className='text-center p-12 shadow shadow-[0, 0, 0, 0.15] bg-white rounded-sm'>
-                <p className='text-[#1F2937] text-2xl text-2xl font-bold mb-3'>30</p>
+                <p className='text-[#1F2937] text-2xl text-2xl font-bold mb-3'>{ecpectedCard.goal}</p>
                 <p className='text-[#64748B] font-semibold'>Goal (Days)</p>
             </div>
             <div className='text-center p-12 shadow shadow-[0, 0, 0, 0.15] bg-white rounded-sm '>
-                <p className='text-[#1F2937] text-2xl text-2xl font-bold mb-3'>Feb 27, 2026</p>
+                <p className='text-[#1F2937] text-2xl text-2xl font-bold mb-3'>{ecpectedCard.next_due_date}</p>
                 <p className='text-[#64748B] font-semibold'>Next Due</p>
             </div>
         </div>

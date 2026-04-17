@@ -19,7 +19,7 @@ const Homepage = () => {
           </div>
           <div className=' grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-10 container mx-auto '>
             <div className='text-center p-12 shadow shadow-[0, 0, 0, 0.15] bg-white rounded-sm'>
-                <p className='text-[#1F2937] text-2xl text-2xl font-bold mb-3'>10</p>
+                <p className='text-[#1F2937] text-2xl text-2xl font-bold mb-3'>{allData.length}</p>
                 <p className='text-[#64748B] font-semibold'>Total Friend</p>
             </div>
             <div className='text-center p-12 shadow shadow-[0, 0, 0, 0.15 bg-white rounded-sm'>
