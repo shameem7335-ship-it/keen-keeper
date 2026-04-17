@@ -23,7 +23,7 @@ const {checkInHandler} = useContact();
     //  console.log(ecpectedCard);
 
     return (
-   <div className='flex justify-center container mx-auto   bg-[#F8FAFC]'>
+   <div className='flex flex-col lg:flex-row md:justify-center container mx-auto   bg-[#F8FAFC]'>
        <div className='my-10 mr-10'>
          <div className='flex flex-col items-center text-center justify-center '>
                <div  className='shadow shadow-[0, 0, 0, 0.15] bg-white py-5 space-y-1 rounded-sm p-10'>
@@ -50,9 +50,9 @@ const {checkInHandler} = useContact();
        </div>
 
 
-       <div className='my-10 ml-10'>
+       <div className='my-10 ml-0 md:ml-10'>
         {/* -- */}
-        <div className='flex gap-5'>
+        <div className='flex flex-col md:flex-row  gap-5'>
             <div className='text-center p-12 shadow shadow-[0, 0, 0, 0.15] bg-white rounded-sm'>
                 <p className='text-[#1F2937] text-2xl text-2xl font-bold mb-3'>62</p>
                 <p className='text-[#64748B] font-semibold'>Days Since Contact </p>
@@ -77,7 +77,7 @@ const {checkInHandler} = useContact();
         {/* -- */}
         <div  className='bg-white  px-12 py-5'>
            <h1 className='text-2xl font-bold mb-4'>Quick Check-In</h1>
-           <div className='flex justify-between gap-3'>
+           <div className='flex flex-col md:flex-row md:justify-between gap-3'>
              <button onClick={()=> checkInHandler("call", ecpectedCard)} className='btn text-center items-center px-22 py-10 rounded-sm bg-[#F8FAFC] shadow shadow-[0, 0, 0, 0.15]'>
                 <div className='flex flex-col'>
                 <p className='text-[#1F2937] text-2xl text-2xl font-bold mb-3'><MdWifiCalling3 /></p>

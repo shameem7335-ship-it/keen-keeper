@@ -34,7 +34,7 @@ const TimelinePage = () => {
            <h1 className=' text-2xl font-bold '>TimeLine</h1>
 
 
-<div className='flex justify-between'>
+<div className='flex flex-col md:flex-row md:justify-between'>
 {/* filter */}
          <div className="dropdown dropdown-bottom dropdown-center">
   <div tabIndex={0} role="button" className="btn m-1 ">Filter timeline <span className='ml-20'>⬇️</span> </div>

@@ -7,11 +7,11 @@ import { Link, NavLink } from 'react-router';
 const Navbar = () => {
 
     return (
-        <div className="navbar bg-base-100 shadow-sm">
-  <div className="flex-1">
-    <a className="btn btn-ghost text-2xl"><span className='font-bold'>Keen</span>Keeper</a>
+        <div className="flex flex-col md:flex-row md:justify-between navbar bg-base-100 shadow-sm">
+  <div className="">
+    <a className="btn btn-ghost text-2xl "><span className='font-bold'>Keen</span>Keeper</a>
   </div>
-  <div className="flex-none">
+  <div className="">
     <ul className="menu menu-horizontal px-1">
       <li className='text-xl'><NavLink className={({isActive}) => isActive ? "bg-black text-white" : ""} to="/"><IoHome></IoHome> Home</NavLink></li>
       <li  className='text-xl'><NavLink className={({isActive}) => isActive ? "bg-black text-white" : ""}  to="/timeline"><RiTimeLine></RiTimeLine> Timeline</NavLink></li>

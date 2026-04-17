@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
   <footer className="footer footer-horizontal footer-center bg-[#244D3F] text-primary-content pt-10">
-  <aside>
+  <aside className="text-left md:text-center max-w-md md:max-w-none w-full px-4 md:px-0">
     
     <p className="font-bold text-2xl">
     KeenKeeper
@@ -49,7 +49,7 @@ const Footer = () => {
       </a>
     </div>
   </nav>
-  <div className='flex justify-between w-full px-50 py-5'>
+ <div className="flex flex-col md:flex-row md:justify-between w-full px-4 md:px-50 py-5 text-left md:text-left">
        <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
  <div className='flex gap-5'>
   <h1>Privacy Policy </h1>
@@ -61,5 +61,5 @@ const Footer = () => {
 </footer>
   );
 };
-
+// ------------
 export default Footer;

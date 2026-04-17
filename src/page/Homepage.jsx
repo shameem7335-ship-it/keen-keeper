@@ -17,7 +17,7 @@ const Homepage = () => {
             <p className='font-semibold text-[#64748B]'>Your personal shelf of meaningful connections. Browse, tend, and nurture the<br/> relationships that matter most.</p>
             <button className='btn btn-neutral mb-5'><FaPlus /> Add a friend</button>
           </div>
-          <div className=' grid grid-cols-4 gap-10 container mx-auto '>
+          <div className=' grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-10 container mx-auto '>
             <div className='text-center p-12 shadow shadow-[0, 0, 0, 0.15] bg-white rounded-sm'>
                 <p className='text-[#1F2937] text-2xl text-2xl font-bold mb-3'>10</p>
                 <p className='text-[#64748B] font-semibold'>Total Friend</p>
@@ -38,7 +38,7 @@ const Homepage = () => {
           <div className='container mx-auto'>
           <div className='my-10 border border-b-1 border-[#dfe2e7]'></div>
             <h1 className='font-bold text-2xl mb-3'>Your frineds</h1>
-            <div className='grid grid-cols-4 mx-auto text-center items-center space-x-5 space-y-5'>
+            <div className=' grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-10 mx-auto text-center items-center space-x-5 space-y-5'>
                 {
                     allData.map(data =>
                         
